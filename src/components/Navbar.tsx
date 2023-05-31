@@ -21,7 +21,7 @@ const Navbar = () => {
               variant="text"
               key={i}
             >
-              <span className="text-xs">More</span>
+              <span className="text-xs lg:text-sm">More</span>
               <ChevronDown className="w-4 h-4" />
             </Button>
           );
@@ -34,7 +34,7 @@ const Navbar = () => {
               variant="text"
               key={i}
             >
-              <span className="text-xs">Menu Item</span>
+              <span className="text-xs lg:text-sm">Menu Item</span>
             </Button>
           )
         );

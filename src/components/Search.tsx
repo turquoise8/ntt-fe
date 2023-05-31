@@ -16,7 +16,7 @@ const Search: React.FC<
         <input
           type="text"
           placeholder="Search..."
-          className="p-1 px-2 bg-transparent md:w-full"
+          className="p-1 lg:p-2 px-2 bg-transparent md:w-full"
         />
         <button className="bg-gray-100 h-full hidden md:flex items-center px-2 text-xs font-normal rounded-e">
           <span className="mr-5">Categories</span>

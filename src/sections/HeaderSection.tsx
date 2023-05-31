@@ -23,7 +23,7 @@ const Header = () => {
         </div>
         <Search className="md:hidden" />
 
-        <hr className="border-gray-400" />
+        <hr className="border-gray-400 hidden md:block mb-2" />
         <Navbar />
       </header>
 
