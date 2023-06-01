@@ -1,10 +1,10 @@
 import CarouselSection from "./sections/CarouselSection";
 import HeaderSection from "./sections/HeaderSection";
-import { addData, useAppDispatch, useAppSelector } from "./store";
+import ProductsSection from "./sections/ProductsSection";
+import { addData, useAppDispatch } from "./store";
 import { useEffect } from "react";
 
 function App() {
-  const data = useAppSelector((state) => state.app.data);
   const dispatch = useAppDispatch();
 
   useEffect(() => {
@@ -17,6 +17,7 @@ function App() {
     <>
       <HeaderSection />
       <CarouselSection />
+      <ProductsSection />
     </>
   );
 }
