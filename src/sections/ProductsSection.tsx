@@ -73,8 +73,12 @@ const ProductsSection = () => {
         {!favoritesOnly || favorites.length === 0
           ? data
               .slice(0, noOfItems)
-              .map((product) => <ProductCard product={product} />)
-          : favorites.map((product) => <ProductCard product={product} />)}
+              .map((product) => (
+                <ProductCard key={product.id} product={product} />
+              ))
+          : favorites.map((product) => (
+              <ProductCard key={product.id} product={product} />
+            ))}
       </div>
 
       {/* Show more button - visible only in certain states */}

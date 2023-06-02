@@ -1,4 +1,5 @@
 import CarouselSection from "./sections/CarouselSection";
+import FooterSection from "./sections/FooterSection";
 import HeaderSection from "./sections/HeaderSection";
 import ProductsSection from "./sections/ProductsSection";
 import { addData, useAppDispatch } from "./store";
@@ -18,6 +19,7 @@ function App() {
       <HeaderSection />
       <CarouselSection />
       <ProductsSection />
+      <FooterSection />
     </>
   );
 }
