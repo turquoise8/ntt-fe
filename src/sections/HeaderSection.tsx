@@ -11,7 +11,7 @@ const Header = () => {
 
   return (
     <>
-      <header className="">
+      <header>
         <div className="flex justify-between items-center w-full md:gap-12 p-4 pt-3 md:p-5">
           <CompanyLogo className="w-36 md:w-40" />
           <Search className="hidden md:flex" />
@@ -38,6 +38,7 @@ const Header = () => {
             <Button
               key={index}
               className="text-2xl font-bold text-gray-800 my-4"
+              onClick={() => setDrawerOpen(false)}
             >
               {item}
             </Button>

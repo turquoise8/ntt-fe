@@ -38,8 +38,10 @@ const ProductsSection = () => {
               backgroundColor: "#0059BC",
             }}
             onClick={() => {
-              setFavoritesOnly(!favoritesOnly);
-              setNoOfItems(4);
+              if (favorites.length > 0) {
+                setFavoritesOnly(!favoritesOnly);
+                setNoOfItems(4);
+              }
             }}
           >
             Beğenilenler
@@ -96,7 +98,7 @@ const ProductsSection = () => {
       )}
 
       {/* A basic loading indicator in case the API responds slow */}
-      {!data.length && <span>Loading...</span>}
+      {!data.length && <span className="m-auto">Loading Products...</span>}
     </div>
   );
 };

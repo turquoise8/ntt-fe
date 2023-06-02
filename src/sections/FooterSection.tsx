@@ -6,10 +6,10 @@ import linkedin from "../assets/linkedin.svg";
 
 const FooterSection = () => {
   return (
-    <div className="pt-9 mt-8 lg:mt-20 bg-brand">
+    <footer className="pt-9 mt-8 lg:mt-20 bg-brand">
       <div className="flex p-3 md:p-5 lg:p-8 lg:px-32 lg:justify-between">
         <div className="flex flex-col md:w-1/2">
-          <div className="">
+          <div>
             <CompanyLogo fill="white" />
             <span className="text-white text-xs">Trusted Global Innovator</span>
           </div>
@@ -91,7 +91,7 @@ const FooterSection = () => {
           </Button>
         </span>
       </div>
-    </div>
+    </footer>
   );
 };
 
